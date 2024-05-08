@@ -111,7 +111,6 @@ public class CollegeLockStatus extends LockParameter {
     private Boolean booleanFellowship;
 
 
-
     @Override
     public String getInstitutionType() {
         return "College";
@@ -133,8 +132,11 @@ public class CollegeLockStatus extends LockParameter {
     }
 
     @Override
-    public String getConstant() {
-        return "College Lock Constant";
+    public LockConstant getConstant() {
+
+        return getConstant();
     }
+
+
 
 }

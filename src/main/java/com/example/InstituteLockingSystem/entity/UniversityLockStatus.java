@@ -197,7 +197,7 @@ public class UniversityLockStatus extends LockParameter{
 
     @Override
     public String getInstitutionType() {
-        return "College";
+        return "University";
     }
 
     @Override
@@ -216,8 +216,8 @@ public class UniversityLockStatus extends LockParameter{
     }
 
     @Override
-    public String getConstant() {
-        return "College Lock Constant";
+    public LockConstant getConstant() {
+        return getConstant();
     }
 
 }

@@ -25,7 +25,7 @@ public class LockController {
     public ResponseEntity<String> lockInstitutionData(@RequestBody LockParameter request) {
         try {
             lockService.lockData(request.getInstitutionType(), request.getAisheCode(), request.getSurveyYear(),
-                    request.getStatus(), request.getConstant());
+                    request.getStatus(), request.getConstant().name());
             return ResponseEntity.ok("Data locked successfully.");
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body(e.getMessage());

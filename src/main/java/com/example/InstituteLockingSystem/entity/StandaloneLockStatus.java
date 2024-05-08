@@ -140,7 +140,7 @@ public class StandaloneLockStatus extends LockParameter {
 
     @Override
     public String getInstitutionType() {
-        return "College";
+        return "Standalone";
     }
 
     @Override
@@ -159,8 +159,9 @@ public class StandaloneLockStatus extends LockParameter {
     }
 
     @Override
-    public String getConstant() {
-        return "College Lock Constant";
+    public LockConstant getConstant() {
+
+        return getConstant();
     }
 
 }

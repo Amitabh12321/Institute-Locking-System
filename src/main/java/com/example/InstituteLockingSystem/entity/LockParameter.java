@@ -12,5 +12,5 @@ public class LockParameter {
     private String aisheCode;
     private Integer surveyYear;
     private Boolean status;
-    private String constant;
+    private LockConstant constant;
 }
